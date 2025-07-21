@@ -1,8 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Preload images in the gallery
     const initialImages = [
-        'assets/uploads/artwork1.jpg',
-        'assets/uploads/artwork2.jpg'
+        'assets/uploads/Bold.jpg',
+        'assets/uploads/Bloom in Silence.jpg',
+        'assets/uploads/Broken.jpg',
+        'assets/uploads/Beauty.jpg',
+        'assets/uploads/Momoa.jpg',
+        'assets/uploads/Color Pencil Portrait.jpg',
+        'assets/uploads/Charcoal portrait.jpg'
         // Replace with your actual image paths
     ];
 
