@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'assets/uploads/Momoa.jpg',
         'assets/uploads/Broken.jpg',
         'assets/uploads/Color Pencil Portrait.jpg',
-        'assets/uploads/Charcoal portrait.jpg',
-    // Image Upload
+        'assets/uploads/Charcoal portrait.jpg'
+    // Add more image paths as needed
     const imageUpload = document.getElementById('imageUpload');
     const imageGallery = document.getElementById('imageGallery');
 
