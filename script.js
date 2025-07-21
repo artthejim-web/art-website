@@ -1,12 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-    'assets/uploads/Bold.jpg',
-        'assets/uploads/Bloom in Silence.jpg',
-        'assets/uploads/Beauty.jpg',
-        'assets/uploads/Momoa.jpg',
-        'assets/uploads/Broken.jpg',
-        'assets/uploads/Color Pencil Portrait.jpg',
-        'assets/uploads/Charcoal portrait.jpg'
-    // Add more image paths as needed
+    // Preload images in the gallery
+    const initialImages = [
+        'assets/uploads/artwork1.jpg',
+        'assets/uploads/artwork2.jpg'
+        // Replace with your actual image paths
+    ];
+
+    initialImages.forEach((src) => {
+        const img = document.createElement('div');
+        img.className = 'col-md-4 mb-4';
+        img.innerHTML = `
+            <div class="card">
+                <img src="${src}" class="card-img-top" alt="Art">
+            </div>
+        `;
+        document.getElementById('imageGallery').appendChild(img);
+    });
+
+    // Image Upload
     const imageUpload = document.getElementById('imageUpload');
     const imageGallery = document.getElementById('imageGallery');
 
