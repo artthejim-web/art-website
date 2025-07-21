@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="assets/catalog.pdf" download>Art Catalog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container">
+            <h1>Welcome to My Art Gallery</h1>
+            <p>Explore my artwork and vlogs, and connect with me on social media!</p>
+        </div>
+    </section>
+
+    <!-- Image Upload & Gallery -->
+    <section class="gallery py-5">
+        <div class="container">
+            <h2>Art Gallery</h2>
+            <input type="file" id="imageUpload" accept="image/*" multiple class="form-control mb-3">
+            <div id="imageGallery" class="row"></div>
+        </div>
+    </section>
+
+    <!-- Video Upload & Vlog Section -->
+    <section class="vlogs py-5 bg-light">
+        <div class="container">
+            <h2>Vlogs</h2>
+            <input type="file" id="videoUpload" accept="video/*" multiple class="form-control mb-3">
+            <div id="videoGallery" class="row"></div>
+        </div>
+    </section>
+
+    <!-- Social Media Links -->
+    <section class="social py-5">
+        <div class="container text-center">
+            <h2>Connect with Me</h2>
+            <div class="social-links">
+                <a href="https://tiktok.com/@yourusername" target="_blank" class="btn btn-outline-dark mx-2">TikTok</a>
+                <a href="https://instagram.com/yourusername" target="_blank" class="btn btn-outline-dark mx-2">Instagram</a>
+                <a href="https://facebook.com/yourusername" target="_blank" class="btn btn-outline-dark mx-2">Facebook</a>
+                <a href="https://wa.me/yourphonenumber" target="_blank" class="btn btn-outline-dark mx-2">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 My Art Gallery. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+                      </html>
