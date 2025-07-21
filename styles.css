@@ -51,3 +51,16 @@ footer {
     max-height: 400px;
     object-fit: cover;
 }
+@media (max-width: 768px) {
+    .navbar-brand img.logo {
+        width: 80px; /* Adjust logo size for small screens */
+    }
+    .col-md-4 {
+        flex: 0 0 100%; /* Full width for gallery on small screens */
+        max-width: 100%;
+    }
+    .img-fluid {
+        width: 100%; /* Ensure artist image fits */
+        height: auto;
+    }
+}
